@@ -1,9 +1,15 @@
 import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './components/home/Home';
 
 const App = () => {
   return (
     <div className="App">
-      This is CloudWalk Frontend test
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Router>
     </div>
   );
 }
