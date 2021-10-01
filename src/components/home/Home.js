@@ -22,11 +22,15 @@ const Home = () => {
             <form>
               <label>Filter By:</label>
               <select>
-                <option value="">Planets</option>
-                <option value="">Planets</option>
-                <option value="">Planets</option>
-                <option value="">Planets</option>
-                <option value="">Planets</option>
+                
+                <option value="">All</option>
+                <option value="">Earth</option>
+                <option value="">Tatooine</option>
+                <option value="">Alderaan</option>
+                <option value="">Yavin IV</option>
+                <option value="">Bespin</option>
+                <option value="">Naboo</option>
+                <option value="">Coruscant</option>
               </select>
             </form>
           </div>
@@ -39,7 +43,9 @@ const Home = () => {
         <hr />
         <section>
           <p>All Characters</p>
-          <div></div>
+          <div className="starwar__box__align__center">
+            
+          </div>
         </section>
       </main>
     </div>
