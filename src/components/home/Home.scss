@@ -75,15 +75,11 @@
       text-transform: uppercase;
       color: #002b56;
       padding: 12px 15px;
-      cursor: pointer; 
+      cursor: pointer;
     }
 
     section {
       padding: 0px 0px 0px 30px;
-    }
-
-    .starwar__box__align__center {
-      justify-content: center;
     }
 
     p {
@@ -97,6 +93,54 @@
     }
   }
 
-  .row.center {
+  .starwar__box__align__center {
+    justify-content: center;
+
+    .starwar__card {
+      border: 0.1rem #c0c0c0 solid;
+      margin: 1.5rem 
+      
+      img {
+        width: 100%;
+      }
+
+      .card__body {
+
+        h4 {
+          font-family: "Helvetica Neue";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 28px;
+          letter-spacing: 1px;
+          color: #000000;
+        }
+
+        h6 {
+          font-family: Helvetica Neue;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: 1px;
+          color: #000000;
+        }
+
+        p {
+          font-family: Helvetica Neue;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: #757575;
+        }
+      }
+    }
+
+    .card__body > * {
+        margin-bottom: 10px;
+    }
   }
 }

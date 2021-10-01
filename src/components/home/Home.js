@@ -47,7 +47,7 @@ const Home = () => {
           <div className="starwar__box__align__center">
             <div className="starwar__card">
                 <a href="/ja">
-                  <img className="starwar__image" src="" alt="" />
+                  <img src="" alt="" />
                 </a>
                 <div className="card__body">
                   <h4>Name 2</h4>
