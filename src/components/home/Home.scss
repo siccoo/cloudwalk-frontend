@@ -1,46 +1,64 @@
 .starwar__container {
-    display: grid;
-    grid-template-areas: "header" "main";
-    grid-template-columns: 1fr;
-    grid-template-rows: 10rem 1fr;
-    height: 100%;
+  display: grid;
+  grid-template-areas: "header" "main";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem 1fr;
+  height: 100%;
 
-    header {
-        grid-area: header;
-        padding: 20px;
+  header {
+    grid-area: header;
+    padding: 20px;
 
+    .header__text {
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 54px;
+      line-height: 64px;
+      letter-spacing: 0.964286px;
+      color: #333333;
+      text-decoration: none;
+    }
+
+    p {
+      font-family: Helvetica Neue;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 32px;
+      letter-spacing: 0.916667px;
+      color: #666666;
+      max-width: 700px;
+    }
+
+    @media only screen and (max-width: 1024px) {
         .header__text {
-            font-family: "Helvetica Neue";
-            font-style: normal;
-            font-weight: 300;
-            font-size: 54px;
-            line-height: 64px;
-            letter-spacing: 0.964286px;
-            color: #333333;
-            text-decoration: none;
+          font-size: 30px;
+          line-height: 40px;
         }
 
         p {
-            font-family: Helvetica Neue;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 22px;
-            line-height: 32px;
-            letter-spacing: 0.916667px;
-            color: #666666;
-            max-width: 700px;
+            font-size: 16px;
+            line-height: 15px;
         }
     }
+  }
 
-    main {
-        grid-area: main;
-    }
+  main {
+    grid-area: main;
 
-    .starwar__box__align{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
+    @media only screen and (max-width: 1024px){
+        hr {
+            margin-top: -20px;
+        }
     }
+  }
+
+  .starwar__box__align {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  } 
 }
