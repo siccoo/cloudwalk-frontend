@@ -8,7 +8,9 @@ const Home = () => {
     <div className="starwar__container">
       <header>
         <div>
-          <Link to="/" className="header__text">Star Wars Characters</Link>
+          <Link to="/" className="header__text">
+            Star Wars Characters
+          </Link>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -22,7 +24,6 @@ const Home = () => {
             <form>
               <label>Filter By:</label>
               <select>
-                
                 <option value="">All</option>
                 <option value="">Earth</option>
                 <option value="">Tatooine</option>
@@ -44,7 +45,18 @@ const Home = () => {
         <section>
           <p>All Characters</p>
           <div className="starwar__box__align__center">
-            
+            <div className="starwar__card">
+                <a href="/ja">
+                  <img className="starwar__image" src="" alt="" />
+                </a>
+                <div className="">
+                  <h4>Name 2</h4>
+                  <h6>Homeworld/Planet Name</h6>
+                  <p>HEIGHT • 100M</p>
+                  <p>MASS • 100kg</p>
+                  <p>GENDER • FEMALE</p>
+                </div>
+            </div>
           </div>
         </section>
       </main>
