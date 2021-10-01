@@ -7,7 +7,7 @@
 
   header {
     grid-area: header;
-    padding: 20px;
+    padding: 10px 25px 5px;
 
     .header__text {
       font-family: "Helvetica Neue";
@@ -21,7 +21,7 @@
     }
 
     p {
-      font-family: Helvetica Neue;
+      font-family: "Helvetica Neue";
       font-style: normal;
       font-weight: 300;
       font-size: 22px;
@@ -32,39 +32,71 @@
     }
 
     @media only screen and (max-width: 1024px) {
-        .header__text {
-          font-size: 30px;
-          line-height: 40px;
-        }
+      .header__text {
+        font-size: 30px;
+        line-height: 40px;
+      }
 
-        p {
-            font-size: 16px;
-            line-height: 15px;
-        }
+      p {
+        font-size: 16px;
+        line-height: 15px;
+      }
     }
   }
 
   main {
     grid-area: main;
 
-    @media only screen and (max-width: 1024px){
-        hr {
-            margin-top: -20px;
-        }
+    @media only screen and (max-width: 1024px) {
+      hr {
+        margin-top: -20px;
+      }
+    }
+
+    .starwar__box__align {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+    }
+
+    button {
+      border: 1px solid #002b56;
+      box-sizing: border-box;
+      background: transparent;
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.857143px;
+      text-transform: uppercase;
+      color: #002b56;
+      padding: 12px 15px;
+      cursor: pointer; 
+    }
+
+    section {
+      padding: 0px 0px 0px 30px;
+    }
+
+    .starwar__box__align__center {
+      justify-content: center;
+    }
+
+    p {
+      font-family: "Helvetica Neue";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 1px;
+      color: #333333;
     }
   }
 
-  .starwar__box__align {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-
-
-  } 
-
   .row.center {
-      justify-content: center;
   }
 }

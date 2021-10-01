@@ -36,7 +36,7 @@ const Home = () => {
             </form>
           </div>
           <div>
-            <button type="button" disabled>
+            <button type="button">
               Clear all
             </button>
           </div>
@@ -49,7 +49,7 @@ const Home = () => {
                 <a href="/ja">
                   <img className="starwar__image" src="" alt="" />
                 </a>
-                <div className="">
+                <div className="card__body">
                   <h4>Name 2</h4>
                   <h6>Homeworld/Planet Name</h6>
                   <p>HEIGHT • 100M</p>
