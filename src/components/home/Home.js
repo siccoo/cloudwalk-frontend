@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "./Home.scss";
+
 const Home = () => {
   return (
     <div className="starwar__container">
@@ -15,7 +17,7 @@ const Home = () => {
       </header>
       <main>
         <hr />
-        <div className="starwars__box__align">
+        <div className="starwar__box__align">
           <div>
             <form>
               <label>Filter By:</label>
@@ -29,10 +31,16 @@ const Home = () => {
             </form>
           </div>
           <div>
-            <button type="button" disabled>Clear all</button>
+            <button type="button" disabled>
+              Clear all
+            </button>
           </div>
         </div>
         <hr />
+        <section>
+          <p>All Characters</p>
+          <div></div>
+        </section>
       </main>
     </div>
   );

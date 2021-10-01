@@ -1,0 +1,11 @@
+.starwars__container {
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr;
+    height: 100%;
+
+    .starwar__box__align{
+        display: flex;
+    }
+}
