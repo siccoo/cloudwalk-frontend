@@ -8,7 +8,7 @@ const Home = () => {
     <div className="starwar__container">
       <header>
         <div>
-          <Link to="/">Star Wars Characters</Link>
+          <Link to="/" className="header__text">Star Wars Characters</Link>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
