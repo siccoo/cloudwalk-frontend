@@ -3,6 +3,7 @@
   grid-template-areas: "header" "main";
   grid-template-columns: 1fr;
   grid-template-rows: 10rem 1fr;
+  font-family: "Helvetica Neue";
   height: 100%;
 
   header {
@@ -10,7 +11,6 @@
     padding: 10px 25px 5px;
 
     .header__text {
-      font-family: "Helvetica Neue";
       font-style: normal;
       font-weight: 300;
       font-size: 54px;
@@ -21,7 +21,6 @@
     }
 
     p {
-      font-family: "Helvetica Neue";
       font-style: normal;
       font-weight: 300;
       font-size: 22px;
@@ -45,13 +44,8 @@
   }
 
   main {
-    grid-area: main;
-
-    @media only screen and (max-width: 1024px) {
-      hr {
-        margin-top: -20px;
-      }
-    }
+    grid-area: main; 
+    padding: 1rem;   
 
     .starwar__box__align {
       display: flex;
@@ -65,7 +59,6 @@
       border: 1px solid #002b56;
       box-sizing: border-box;
       background: transparent;
-      font-family: "Helvetica Neue";
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
@@ -83,7 +76,6 @@
     }
 
     p {
-      font-family: "Helvetica Neue";
       font-style: normal;
       font-weight: 300;
       font-size: 34px;
@@ -91,56 +83,61 @@
       letter-spacing: 1px;
       color: #333333;
     }
+
+    .starwar__box__align__center {
+        justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    
+        .starwar__card {
+          border: 0.1rem #c0c0c0 solid;
+          margin: 1.5rem;
+    
+          img {
+            width: 100%;
+            max-width: 29rem;
+          }
+    
+          .card__body {
+            h4 {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 28px;
+              letter-spacing: 1px;
+              color: #000000;
+            }
+    
+            h6 {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 28px;
+              letter-spacing: 1px;
+              color: #000000;
+            }
+    
+            p {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+              color: #757575;
+            }
+          }
+
+          .card__body > * {
+            margin-bottom: 0.5rem;
+          }
+        }
+    
+        
+      }
   }
 
-  .starwar__box__align__center {
-    justify-content: center;
-
-    .starwar__card {
-      border: 0.1rem #c0c0c0 solid;
-      margin: 1.5rem 
-      
-      img {
-        width: 100%;
-      }
-
-      .card__body {
-
-        h4 {
-          font-family: "Helvetica Neue";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 20px;
-          line-height: 28px;
-          letter-spacing: 1px;
-          color: #000000;
-        }
-
-        h6 {
-          font-family: Helvetica Neue;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 28px;
-          letter-spacing: 1px;
-          color: #000000;
-        }
-
-        p {
-          font-family: Helvetica Neue;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 16px;
-          letter-spacing: 0.5px;
-          text-transform: uppercase;
-          color: #757575;
-        }
-      }
-    }
-
-    .card__body > * {
-        margin-bottom: 10px;
-    }
-  }
+  
 }
