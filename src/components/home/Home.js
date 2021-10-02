@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import swapiApi from "../../utils/swapi";
 
@@ -9,6 +9,28 @@ const Home = () => {
   const [movies, setMovies] = useState();
   const [state, setState] = useState(false);
   const [characters, setCharacters] = useState([]);
+
+  useEffect(() => {
+    // first api call to get starwars planets
+    const planet = () => {
+      return swapiApi({
+        path: "https://swapi.dev/api/planets/",
+        payload: null,
+        method: "GET"
+      }).then((result) => {
+        // console.log(result)
+        setMapPlanets(result);
+        setState(true);
+      }).catch((err) => console.log(err));
+    }
+
+    planet();
+  }, []);
+
+  const handleChange = (e) => {
+    // console.log("Movie Selected!!", e.target.value);
+    setMovies(e.target.value);
+  }
 
   return (
     <div className="starwar__container">
