@@ -109,7 +109,6 @@
       }
 
       .starwar__items {
-        justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -154,26 +153,26 @@
             }
           }
         }
+      }
 
-        &__card__button {
-          margin: auto;
+      &__button {
+        margin: auto;
 
-          button {
-            background: none;
-            border: 1px solid #002b56;
-            box-sizing: border-box;
-            border-radius: 2px;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px; 
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #002b53;
-            padding: 12px 100px;
-            margin-top: 70px;
-            cursor: pointer;
-          }
+        button {
+          background: none;
+          border: 1px solid #002b56;
+          box-sizing: border-box;
+          border-radius: 2px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px; 
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #002b53;
+          padding: 12px 100px;
+          margin-top: 70px;
+          cursor: pointer;
         }
       }
     }
