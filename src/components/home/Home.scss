@@ -5,6 +5,7 @@
   grid-template-rows: 10rem 1fr;
   font-family: "Helvetica Neue";
   height: 100%;
+  padding: 0px 0px 150px 0px;
 
   header {
     grid-area: header;
@@ -44,8 +45,7 @@
   }
 
   main {
-    grid-area: main; 
-    padding: 1rem;   
+    grid-area: main;
 
     .starwar__box__align {
       display: flex;
@@ -53,54 +53,53 @@
       justify-content: space-between;
       align-items: center;
       padding: 30px;
+
+      &__button {
+        border: 1px solid #002b56;
+        box-sizing: border-box;
+        background: transparent;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.857143px;
+        text-transform: uppercase;
+        color: #002b56;
+        padding: 12px 15px;
+        cursor: pointer;
+      }
     }
 
-    button {
-      border: 1px solid #002b56;
-      box-sizing: border-box;
-      background: transparent;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
-      text-align: center;
-      letter-spacing: 0.857143px;
-      text-transform: uppercase;
-      color: #002b56;
-      padding: 12px 15px;
-      cursor: pointer;
-    }
+    .starwar__grid {
+      padding: 0 0 0 30px;
 
-    section {
-      padding: 0px 0px 0px 30px;
-    }
+      p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color: #333333;
+      }
 
-    p {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 34px;
-      line-height: 40px;
-      letter-spacing: 1px;
-      color: #333333;
-    }
-
-    .starwar__box__align__center {
-        justify-content: center;
-        display: flex;
-        flex-wrap: nowrap;
+      .starwar__items {
         justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
-    
-        .starwar__card {
+
+        &__card {
           border: 0.1rem #c0c0c0 solid;
           margin: 1.5rem;
-    
+          flex-basis: 16rem;
+
           img {
             width: 100%;
             max-width: 29rem;
           }
-    
-          .card__body {
+
+          &__body {
             h4 {
               font-style: normal;
               font-weight: normal;
@@ -109,7 +108,7 @@
               letter-spacing: 1px;
               color: #000000;
             }
-    
+
             h6 {
               font-style: normal;
               font-weight: normal;
@@ -118,7 +117,7 @@
               letter-spacing: 1px;
               color: #000000;
             }
-    
+
             p {
               font-style: normal;
               font-weight: normal;
@@ -129,15 +128,30 @@
               color: #757575;
             }
           }
+        }
 
-          .card__body > * {
-            margin-bottom: 0.5rem;
+        &__card__button {
+          margin: auto;
+
+          button {
+            background: none;
+            border: 1px solid #002b56;
+            box-sizing: border-box;
+            border-radius: 2px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #002b53;
+            padding: 12px 100px;
+            margin-top: 70px;
+            cursor: pointer;
           }
         }
-    
-        
       }
+    }
   }
-
-  
 }

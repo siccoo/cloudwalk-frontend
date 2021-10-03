@@ -16,13 +16,15 @@ const Home = () => {
       return swapiApi({
         path: "https://swapi.dev/api/planets/",
         payload: null,
-        method: "GET"
-      }).then((result) => {
-        // console.log(result)
-        setMapPlanets(result);
-        setState(true);
-      }).catch((err) => console.log(err));
-    }
+        method: "GET",
+      })
+        .then((result) => {
+          // console.log(result)
+          setMapPlanets(result);
+          setState(true);
+        })
+        .catch((err) => console.log(err));
+    };
 
     planet();
   }, []);
@@ -30,7 +32,7 @@ const Home = () => {
   const handleChange = (e) => {
     // console.log("Movie Selected!!", e.target.value);
     setMovies(e.target.value);
-  }
+  };
 
   return (
     <div className="starwar__container">
@@ -64,18 +66,18 @@ const Home = () => {
             </form>
           </div>
           <div>
-            <button type="button">Clear all</button>
+            <button type="button" className="starwar__box__align__button">Clear all</button>
           </div>
         </div>
         <hr />
-        <section>
+        <section className="starwar__grid">
           <p>All Characters</p>
-          <div className="starwar__box__align__center">
-            <div className="starwar__card">
+          <div className="starwar__items">
+            <div className="starwar__items__card">
               <a href="/ja">
                 <img src="" alt="" />
               </a>
-              <div className="card__body">
+              <div className="starwar__items__card__body">
                 <h4>Name 2</h4>
                 <h6>Homeworld/Planet Name</h6>
                 <p>HEIGHT • 100M</p>
@@ -83,11 +85,11 @@ const Home = () => {
                 <p>GENDER • FEMALE</p>
               </div>
             </div>
-            <div className="starwar__card">
+            <div className="starwar__items__card">
               <a href="/ja">
                 <img src="" alt="" />
               </a>
-              <div className="card__body">
+              <div className="starwar__items__card__body">
                 <h4>Name 2</h4>
                 <h6>Homeworld/Planet Name</h6>
                 <p>HEIGHT • 100M</p>
@@ -95,11 +97,11 @@ const Home = () => {
                 <p>GENDER • FEMALE</p>
               </div>
             </div>
-            <div className="starwar__card">
+            <div className="starwar__items__card">
               <a href="/ja">
                 <img src="" alt="" />
               </a>
-              <div className="card__body">
+              <div className="starwar__items__card__body">
                 <h4>Name 2</h4>
                 <h6>Homeworld/Planet Name</h6>
                 <p>HEIGHT • 100M</p>
@@ -107,11 +109,11 @@ const Home = () => {
                 <p>GENDER • FEMALE</p>
               </div>
             </div>
-            <div className="starwar__card">
+            <div className="starwar__items__card">
               <a href="/ja">
                 <img src="" alt="" />
               </a>
-              <div className="card__body">
+              <div className="starwar__items__card__body">
                 <h4>Name 2</h4>
                 <h6>Homeworld/Planet Name</h6>
                 <p>HEIGHT • 100M</p>
@@ -119,11 +121,11 @@ const Home = () => {
                 <p>GENDER • FEMALE</p>
               </div>
             </div>
-            <div className="starwar__card">
+            <div className="starwar__items__card">
               <a href="/ja">
                 <img src="" alt="" />
               </a>
-              <div className="card__body">
+              <div className="starwar__items__card__body">
                 <h4>Name 2</h4>
                 <h6>Homeworld/Planet Name</h6>
                 <p>HEIGHT • 100M</p>
@@ -131,11 +133,11 @@ const Home = () => {
                 <p>GENDER • FEMALE</p>
               </div>
             </div>
-            <div className="starwar__card">
+            <div className="starwar__items__card">
               <a href="/ja">
                 <img src="" alt="" />
               </a>
-              <div className="card__body">
+              <div className="starwar__items__card__body">
                 <h4>Name 2</h4>
                 <h6>Homeworld/Planet Name</h6>
                 <p>HEIGHT • 100M</p>
@@ -143,11 +145,11 @@ const Home = () => {
                 <p>GENDER • FEMALE</p>
               </div>
             </div>
-            <div className="starwar__card">
+            <div className="starwar__items__card">
               <a href="/ja">
                 <img src="" alt="" />
               </a>
-              <div className="card__body">
+              <div className="starwar__items__card__body">
                 <h4>Name 2</h4>
                 <h6>Homeworld/Planet Name</h6>
                 <p>HEIGHT • 100M</p>
@@ -155,11 +157,11 @@ const Home = () => {
                 <p>GENDER • FEMALE</p>
               </div>
             </div>
-            <div className="starwar__card">
+            <div className="starwar__items__card">
               <a href="/ja">
                 <img src="" alt="" />
               </a>
-              <div className="card__body">
+              <div className="starwar__items__card__body">
                 <h4>Name 2</h4>
                 <h6>Homeworld/Planet Name</h6>
                 <p>HEIGHT • 100M</p>
@@ -167,29 +169,8 @@ const Home = () => {
                 <p>GENDER • FEMALE</p>
               </div>
             </div>
-            <div className="starwar__card">
-              <a href="/ja">
-                <img src="" alt="" />
-              </a>
-              <div className="card__body">
-                <h4>Name 2</h4>
-                <h6>Homeworld/Planet Name</h6>
-                <p>HEIGHT • 100M</p>
-                <p>MASS • 100kg</p>
-                <p>GENDER • FEMALE</p>
-              </div>
-            </div>
-            <div className="starwar__card">
-              <a href="/ja">
-                <img src="" alt="" />
-              </a>
-              <div className="card__body">
-                <h4>Name 2</h4>
-                <h6>Homeworld/Planet Name</h6>
-                <p>HEIGHT • 100M</p>
-                <p>MASS • 100kg</p>
-                <p>GENDER • FEMALE</p>
-              </div>
+            <div className="starwar__items__card__button">
+              <button type="submit">Load More</button>
             </div>
           </div>
         </section>
