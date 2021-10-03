@@ -3,7 +3,7 @@
   grid-template-areas: "header" "main";
   grid-template-columns: 1fr;
   grid-template-rows: 10rem 1fr;
-  font-family: "Helvetica Neue";
+  font-family: Helvetica Neue;
   height: 100%;
   padding: 0px 0px 150px 0px;
 
@@ -114,7 +114,6 @@
         align-items: center;
 
         &__card {
-          border: 0.1rem #c0c0c0 solid;
           margin: 1.5rem;
           flex-basis: 16rem;
 
@@ -128,7 +127,8 @@
               font-style: normal;
               font-weight: normal;
               font-size: 20px;
-              line-height: 28px;
+              // line-height: 28px;
+              margin-top: 10px;
               letter-spacing: 1px;
               color: #000000;
             }
@@ -137,7 +137,8 @@
               font-style: normal;
               font-weight: normal;
               font-size: 16px;
-              line-height: 28px;
+              // line-height: 28px;
+              margin-top: -10px;
               letter-spacing: 1px;
               color: #000000;
             }

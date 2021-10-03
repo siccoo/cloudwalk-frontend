@@ -76,8 +76,8 @@ const Home = () => {
           <h4>{character.name}</h4>
           <h6>{movies}</h6>
           <p>{character.height}</p>
-          <p>MASS • 100kg</p>
-          <p>GENDER • FEMALE</p>
+          <p>{character.mass}</p>
+          <p>{character.gender}</p>
         </div>
       </div>
     );
