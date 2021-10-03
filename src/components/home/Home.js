@@ -64,6 +64,8 @@ const Home = () => {
     });
   };
 
+
+
   let list = characters.map((character, i) => {
     return (
       <div className="starwar__items__card" key={i}>
@@ -122,8 +124,8 @@ const Home = () => {
         <section className="starwar__grid">
           <p>All Characters</p>
           <div className="starwar__items">{table && list}</div>
-          <div className="starwar__grid__button">
-            <button type="submit" onClick>Load More</button>
+          <div className="starwar__button">
+            <button type="submit" onClick={handleChange}>Load More</button>
           </div>
         </section>
       </main>
