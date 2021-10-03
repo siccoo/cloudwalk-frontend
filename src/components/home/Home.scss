@@ -54,6 +54,31 @@
       align-items: center;
       padding: 30px;
 
+      label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        color: #606060;
+      }
+
+      select {
+        border: 0;
+        border-bottom: 1px solid #c8c8c8;
+        padding: 10px -10px 0 20px;
+
+        option {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.5px;
+          color: #606060;
+          padding: 10px;
+        }
+      }
+
       &__button {
         border: 1px solid #002b56;
         box-sizing: border-box;
@@ -141,8 +166,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
-            line-height: 16px;
-            text-align: center;
+            line-height: 16px; 
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #002b53;
