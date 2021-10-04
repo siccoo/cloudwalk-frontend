@@ -64,7 +64,9 @@ const Home = () => {
     });
   };
 
-
+const loadMore = () => {
+  setCharacters(mapPlanets.length);
+}
 
   let list = characters.map((character, i) => {
     return (
@@ -125,7 +127,7 @@ const Home = () => {
           <p>All Characters</p>
           <div className="starwar__items">{table && list}</div>
           <div className="starwar__button">
-            <button type="submit" onClick={handleChange}>Load More</button>
+            <button type="submit" onClick={loadMore}>Load More</button>
           </div>
         </section>
       </main>
