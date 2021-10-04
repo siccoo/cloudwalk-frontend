@@ -117,9 +117,21 @@
           margin: 1.5rem;
           flex-basis: 16rem;
 
-          img {
-            width: 100%;
-            max-width: 29rem;
+          .starwar__image__container {
+            position: relative;
+
+            img {
+              width: 100%;
+              max-width: 29rem;
+            }
+
+            .transition__img {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              opacity: 0;
+              transition: opacity 0.5s ease;
+            }
           }
 
           &__body {
@@ -158,6 +170,7 @@
 
       .starwar__button {
         margin: auto;
+        text-align: center;
 
         button {
           background: none;
@@ -167,7 +180,7 @@
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
-          line-height: 16px; 
+          line-height: 16px;
           letter-spacing: 1px;
           text-transform: uppercase;
           color: #002b53;

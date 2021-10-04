@@ -64,26 +64,37 @@ const Home = () => {
     });
   };
 
-const loadMore = () => {
-  setCharacters(mapPlanets.length);
-}
+  const loadMore = () => {
+    setCharacters(mapPlanets.length);
+  };
 
   let list = characters.map((character, i) => {
     return (
       <div className="starwar__items__card" key={i}>
-        <a href="/ja">
+        <div className="starwar__image__container">
           <img src={"https://picsum.photos/304/228"} alt="" />
-        </a>
+          <img
+            className="transition__img"
+            src={"https://picsum.photos/304/228"}
+            alt=""
+          />
+        </div>
         <div className="starwar__items__card__body">
-          <h4>{character.name}</h4>
-          <h6>{movies}</h6>
-          <p>{character.height}</p>
-          <p>{character.mass}</p>
-          <p>{character.gender}</p>
+          <marquee behavior="scroll" direction="up" scrollamount="1">
+            <h4>{character.name}</h4>
+            <h6>{movies}</h6>
+            <p>{character.height}</p>
+            <p>{character.mass}</p>
+            <p>{character.gender}</p>
+          </marquee>
         </div>
       </div>
     );
   });
+
+  // const clearAllItems = (itemId: string) => {
+  //   setCharacters(characters.filter(({ id}) => id !== itemId));
+  // }
 
   return (
     <div className="starwar__container">
@@ -117,7 +128,12 @@ const loadMore = () => {
             </form>
           </div>
           <div>
-            <button type="button" className="starwar__box__align__button">
+            <button
+              type="button"
+              className="starwar__box__align__button"
+              // onClick={clearAllItems}
+              // disabled={!(characters.some(characterItem => characterItem.id === item.id))}
+            >
               Clear all
             </button>
           </div>
@@ -127,7 +143,9 @@ const loadMore = () => {
           <p>All Characters</p>
           <div className="starwar__items">{table && list}</div>
           <div className="starwar__button">
-            <button type="submit" onClick={loadMore}>Load More</button>
+            <button type="submit" onClick={loadMore}>
+              Load More
+            </button>
           </div>
         </section>
       </main>
